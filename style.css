@@ -1,0 +1,140 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  --background-color: white;
+  --color-blue: #1e64b0;
+  --color-grey: grey;
+  --color-lightgrey: lightgrey;
+}
+
+body {
+  background-color: #f3f2ef;
+  margin: 2rem auto;
+  width: 800px;
+}
+
+.contact-section {
+  background-color: var(--background-color);
+  border: var(--color-lightgrey) solid 1px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.pending-invitations {
+  background-color: var(--background-color);
+  border: solid var(--color-lightgrey) 1px;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact {
+  border: solid lightgrey 1px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  padding: 0.5rem;
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 1px 1px lightgray;
+}
+
+.picture {
+  width: 65%;
+  border-radius: 50%;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.name {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.job-title {
+  margin: 0;
+  color: var(--color-grey);
+  font-size: 0.8rem;
+}
+
+.connections {
+  font-size: 0.7rem;
+  color: var(--color-grey);
+  margin: 1.5rem 0;
+}
+.connections:before {
+  content: "∞ ";
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 50%;
+  color: var(--background-color);
+  background-color: hsl(0, 0%, 50%, 0.8);
+  border: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.connectButton {
+  all: unset;
+  color: var(--color-blue);
+  border: var(--color-blue) solid 1.5px;
+  border-radius: 15px;
+  padding: 0.25rem 3rem;
+  text-align: center;
+}
+
+.connectButton:hover {
+  background-color: #038fec;
+  color: var(--background-color);
+  _border: 2px rgb(13, 126, 246) solid;
+  box-shadow: 0 0 2px 2px var(--color-blue);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.manage-button,
+.see-all-button {
+  all: unset;
+  padding: 0.3rem 0.5rem;
+}
+
+.manage-button:hover,
+.see-all-button:hover {
+  background-color: var(--color-lightgrey);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.deleteBtn:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.2s;
+  border: 1px solid grey;
+}
